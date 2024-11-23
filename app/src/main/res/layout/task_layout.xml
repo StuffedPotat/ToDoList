@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black"
+            android:id="@+id/checkbox"
+            android:text="This is a sample text."
+            android:textSize="18sp"
+            android:paddingStart="4dp"/>
+
+        <TextView
+            android:id="@+id/dueDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox"
+            android:text="No due date set"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
